@@ -1,6 +1,6 @@
-// This function will handle displaying the data
+// This function will be displaying the data
 function displayData(data) {
-    // Find the container where we want to display the data
+    // The container for display the data
     const container = document.getElementById('data-container');
     
     // Clear any previous content
@@ -11,7 +11,7 @@ function displayData(data) {
   }
   
   // Fetch data from the URL
-  fetch('https://jsonplaceholder.typicode.com/posts') // Example URL
+  fetch('https://jsonplaceholder.typicode.com/posts') //URL
     .then(response => {
       if (!response.ok) {
         throw new Error('Network response was not ok');
